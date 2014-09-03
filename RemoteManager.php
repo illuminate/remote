@@ -1,5 +1,6 @@
 <?php namespace Illuminate\Remote;
 
+use Illuminate\Foundation\Application;
 use Symfony\Component\Console\Output\NullOutput;
 use Symfony\Component\Console\Output\ConsoleOutput;
 
@@ -18,7 +19,7 @@ class RemoteManager {
 	 * @param  \Illuminate\Foundation\Application  $app
 	 * @return void
 	 */
-	public function __construct($app)
+	public function __construct(Application $app)
 	{
 		$this->app = $app;
 	}
